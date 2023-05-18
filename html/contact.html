@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keep in touch with us">
+    <title>She Plays Too | Contact</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/effect.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <script src="../js/validate.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><h1>She Plays Too</h1></a>
+            <div class="navButtons">
+                <a href="blogs.html">Blogs</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form id="contactForm">
+            <div>
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder="  Full name" name="message">
+                <div class="formError" id="nameError">Never seen a full name so short?</div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="  Enter email" name="message">
+                <div class="formError" id="emailError">Is that really an email??</div>
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="  Subject" name="message">
+                <div class="formError" id="subjectError">Size does matter, please add some characters.</div>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="  Write something .." name="message"></textarea>  
+                <div class="formError" id="messageError">Size does matter, please add some characters.</div>
+            </div>
+            <div>
+                <label for="submit">Submit</label>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

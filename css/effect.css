@@ -1,0 +1,10 @@
+nav a:hover,
+footer a:hover {
+    opacity: 50%;
+}
+
+.next:hover,
+.prev:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}

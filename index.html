@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get game reviews, for girls by girls">
     <title>She Plays Too | Home</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/effect.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/slider.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html"><h1>She Plays Too</h1></a>
-            <div>
+            <div class="navButtons">
                 <a href="html/blogs.html">Blogs</a>
                 <a href="html/about.html">About</a>
                 <a href="html/contact.html">Contact</a>
@@ -20,9 +24,42 @@
     </header>
     <main>
         <div class="headerBackground"></div>
-        <section>
+        <section class="latestPosts">
             <h2>Latest Posts</h2>
+            <div class="sliderContainer">
+                <div class="slide">
+                    <p>Test test test</p>
+                </div>
+                <div class="slide">
+                    <p>Bla bla bla</p>
+                </div>
+                <div class="slide">
+                    <p>Check check check</p>
+                </div>
+                <div class="slide">
+                    <p>Tester</p>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">Back</a>
+                <a class="next" onclick="plusSlides(1)">Next</a>
+            </div>
+            <div class="dotContainer">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
         </section>
     </main>
+    <footer>
+        <section>
+            <h3>Social</h3>
+            <div class="socialLinks">
+                <a href="#">Youtube</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Twitter</a>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
