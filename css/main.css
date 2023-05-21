@@ -148,6 +148,7 @@ main {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 50px 0;
 }
 
 #contactForm label {

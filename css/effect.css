@@ -3,6 +3,10 @@ footer a:hover {
     opacity: 50%;
 }
 
+.thisPage {
+    border-bottom: 1px solid black;
+}
+
 .next:hover,
 .prev:hover {
     background-color: rgba(0,0,0,0.8);
