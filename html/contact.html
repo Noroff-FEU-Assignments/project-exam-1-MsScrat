@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="../css/effect.css">
     <link rel="stylesheet" href="../css/media.css">
     <script src="../js/validate.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html"><h1>She Plays Too</h1></a>
+            <a href="../index.html"><h1>ShePlaysToo</h1></a>
             <div class="navButtons">
                 <a href="blogs.html">Blogs</a>
                 <a href="about.html">About</a>
@@ -23,32 +25,65 @@
         </nav>
     </header>
     <main>
-        <form id="contactForm">
-            <div>
-                <label for="name">Full name</label>
-                <input type="text" id="name" placeholder="  Full name" name="message">
-                <div class="formError" id="nameError">Never seen a full name so short?</div>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="  Enter email" name="message">
-                <div class="formError" id="emailError">Is that really an email??</div>
-            </div>
-            <div>
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="  Subject" name="message">
-                <div class="formError" id="subjectError">Size does matter, please add some characters.</div>
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" placeholder="  Write something .." name="message"></textarea>  
-                <div class="formError" id="messageError">Size does matter, please add some characters.</div>
-            </div>
-            <div>
-                <label for="submit">Submit</label>
-                <input type="submit" id="submit">
-            </div>
-        </form>
+        <div class="contactHeader"></div>
+        <section class="contactContainer">
+            <section>
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <div>
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" placeholder="  Full name" name="message">
+                        <div class="formError" id="nameError">Never seen a full name so short?</div>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="  Enter email" name="message">
+                        <div class="formError" id="emailError">Is that really an email??</div>
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="  Subject" name="message">
+                        <div class="formError" id="subjectError">Size does matter, please add some characters.</div>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="  Write something .." name="message"></textarea>  
+                        <div class="formError" id="messageError">Size does matter, please add some characters.</div>
+                    </div>
+                    <div>
+                        <label for="submit">Submit</label>
+                        <input type="submit" id="submit">
+                    </div>
+                </form>
+            </section>
+            <section class="contactText">
+                <h2>Your opinion matter</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sapien orci, accumsan eget ligula eget, finibus aliquam lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Integer a dictum nulla. Cras faucibus ante non dictum vehicula. Donec hendrerit pellentesque lorem id fermentum. Proin tempor luctus ex non lobortis. Phasellus felis metus, posuere vel accumsan vitae, dictum vel odio. Nulla tempus nisl nec faucibus faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas sit amet efficitur sem. Donec semper nec diam ac condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis fringilla, est at euismod dapibus, libero tortor posuere est, tempor mattis purus arcu id erat. Mauris lacinia vestibulum tellus in sollicitudin.</p>
+            </section>
+        </section>
     </main>
+    <footer>
+        <section class="logo">
+            <a href="../index.html"><h1>ShePlaysToo</h1></a>
+            <p>For girls, by girls</p>
+        </section>
+        <section>
+            <h3>Social</h3>
+            <div class="socialLinks">
+                <a href="#">Youtube</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="#">Twitter</a>
+            </div>
+        </section>
+        <section>
+            <h3>Location</h3>
+            <div>
+                <p>Mølleparken 4</p>
+                <p>Noroff Campus</p>
+                <p>OSLO 0459</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

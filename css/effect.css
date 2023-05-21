@@ -1,4 +1,4 @@
-nav a:hover,
+.navButtons a:hover,
 footer a:hover {
     opacity: 50%;
 }
@@ -7,4 +7,8 @@ footer a:hover {
 .prev:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
+}
+
+#name:hover, #email:hover, #subject:hover, #message:hover, #submit:hover {
+    border: 1px solid #444444;
 }
