@@ -1,4 +1,4 @@
-var pageLimit = 10;
+var pageLimit = 5;
 
 async function blogFetcher(n) {
 
@@ -13,7 +13,7 @@ async function blogFetcher(n) {
         for (let i=0; i < n; i++) {
             document.getElementById("blogList").innerHTML += 
             `
-                <p>${data[i].title.rendered}</p>
+            <a class="blogListContainer" href="blogSpecific.html?id=${data[i].id}"><div class="blogListPost">${data[i].title.rendered}</div></a>
             `;
         }
     }
@@ -22,7 +22,7 @@ async function blogFetcher(n) {
 blogFetcher(pageLimit)
 
 function showMore(){
-    pageLimit += 10;
+    pageLimit += 5;
 
     blogFetcher(pageLimit);
 }

@@ -67,14 +67,14 @@ main {
     justify-content: space-evenly;
 }
 
-.slide div{
-    background-color: white;
+.slide img{
     width: 20vw;
-    height: 40vh;
-    border-radius: 10px;
+    height: 50vh;
+    margin-top: 20px;
 }
 
-.slide a {
+.slide a,
+.blogListContainer {
     text-decoration: none;
     color: black;
 }
@@ -124,6 +124,26 @@ main {
 .active, 
 .dot:hover {
     background-color: #717171;
+}
+
+.indexSection2 {
+    width: 70vw;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+/* BLOGS */
+
+.bloglistSection {
+    text-align: center;
+}
+
+.blogListPost {
+    margin: 50px auto;
+    background-color: white;
+    width: 70vw;
+    height: 30vh;
 }
 
 

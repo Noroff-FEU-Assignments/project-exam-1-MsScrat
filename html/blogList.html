@@ -7,7 +7,7 @@
     <title>ShePlaysToo | Blogs</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/effect.css">
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/mediaQueries.css">
     <script src="../js/blogList.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +25,11 @@
         </nav>
     </header>
     <main>
-        <section id="blogList">
-        
+        <section class="bloglistSection">
+            <h2>All blog posts</h2>
+            <div id="blogList"></div>
+            <button onclick="showMore()">Show more</button>
         </section>
-        <button onclick="showMore()">Show more</button>
     </main>
     <footer>
         <section class="logo">
