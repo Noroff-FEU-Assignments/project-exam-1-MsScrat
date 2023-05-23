@@ -1,5 +1,6 @@
 .navButtons a:hover,
-footer a:hover {
+footer a:hover,
+.slide a:hover {
     opacity: 50%;
 }
 

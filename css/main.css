@@ -67,11 +67,16 @@ main {
     justify-content: space-evenly;
 }
 
-.slide p {
+.slide div{
     background-color: white;
     width: 20vw;
     height: 40vh;
     border-radius: 10px;
+}
+
+.slide a {
+    text-decoration: none;
+    color: black;
 }
 
 .prev, .next {
