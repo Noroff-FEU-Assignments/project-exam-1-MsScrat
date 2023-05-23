@@ -11,9 +11,24 @@ async function blogFetcher(n) {
         document.getElementById("blogList").innerHTML = ""
 
         for (let i=0; i < n; i++) {
+
+            const imageRequest = "https://www.sheplaystoo.no/wp-json/wp/v2/media/" + data[i].featured_media;
+            const imageResponse = await fetch(imageRequest);
+
+            imageData = await imageResponse.json();
+
             document.getElementById("blogList").innerHTML += 
             `
-            <a class="blogListContainer" href="blogSpecific.html?id=${data[i].id}"><div class="blogListPost">${data[i].title.rendered}</div></a>
+            <div class="blogListContainer">
+                <div>
+                    <img src="${imageData.guid.rendered}">
+                </div>
+                <div class="blogListContent">
+                    <h3 class="blogListPost">${data[i].title.rendered}</h3>
+                    ${data[i]["excerpt"]["rendered"]}
+                    <a href="blogSpecific.html?id=${data[i].id}">Read more</a>
+                </div>
+            </div>
             `;
         }
     }
@@ -26,3 +41,4 @@ function showMore(){
 
     blogFetcher(pageLimit);
 }
+
