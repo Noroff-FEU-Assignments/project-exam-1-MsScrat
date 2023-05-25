@@ -7,7 +7,9 @@ async function blogFetcher() {
     const response = await fetch(blogRequest);
 
     if(response.ok) {
+
         data = await response.json();
+
         document.getElementById("blogSpecificTitle").innerHTML = 
         `
         <h1>${data["title"]["rendered"]}</h1>
@@ -20,7 +22,7 @@ async function blogFetcher() {
 
         document.getElementById("blogSpecificImage").innerHTML = 
         `
-        <img src="${data["title"]["rendered"]}">
+        <img src="${imageData.guid.rendered}">
         `;
     }
 

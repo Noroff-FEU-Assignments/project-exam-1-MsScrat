@@ -1,19 +1,22 @@
 .navButtons a:hover,
 footer a:hover,
-.slide a:hover {
+.slide a:hover,
+.bloglistSection button:hover,
+.blogListContent a:hover,
+#submit:hover {
     opacity: 50%;
 }
 
 .thisPage {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
 }
 
 .next:hover,
 .prev:hover {
-    background-color: rgba(0,0,0,0.8);
-    color: white;
+    background-color: #444444;
 }
 
-#name:hover, #email:hover, #subject:hover, #message:hover, #submit:hover {
-    border: 1px solid #444444;
+#name:hover, #email:hover, #subject:hover, #message:hover {
+    cursor: pointer;
+    
 }
