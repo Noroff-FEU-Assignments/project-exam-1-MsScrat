@@ -3,7 +3,8 @@ footer a:hover,
 .slide a:hover,
 .bloglistSection button:hover,
 .blogListContent a:hover,
-#submit:hover {
+#submit:hover,
+#myModal:hover {
     opacity: 50%;
 }
 
@@ -18,5 +19,22 @@ footer a:hover,
 
 #name:hover, #email:hover, #subject:hover, #message:hover {
     cursor: pointer;
-    
 }
+
+.modalContent, #content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+

@@ -12,7 +12,7 @@ function validateForm(event) {
     const name = document.querySelector("#name");
     const nameError = document.querySelector("#nameError");
 
-    if (name.value.trim().lenght > 5) {
+    if (name.value.trim().length > 5) {
         nameError.style.display = "none";
     }
 
@@ -23,11 +23,13 @@ function validateForm(event) {
     const email = document.querySelector("#email");
     const emailError = document.querySelector("#emailError");
 
-    if (validateEmail (email.value === true)) {
+    if (validateEmail(email.value) === true) {
+
         emailError.style.display = "none";
     }
 
     else {
+
         emailError.style.display = "block";
     }
 

@@ -10,6 +10,11 @@ async function blogFetcher() {
 
         data = await response.json();
 
+        const imageRequest = "https://www.sheplaystoo.no/wp-json/wp/v2/media/" + data.featured_media;
+        const imageResponse = await fetch(imageRequest);
+
+        imageData = await imageResponse.json();
+
         document.getElementById("blogSpecificTitle").innerHTML = 
         `
         <h1>${data["title"]["rendered"]}</h1>
@@ -22,11 +27,15 @@ async function blogFetcher() {
 
         document.getElementById("blogSpecificImage").innerHTML = 
         `
-        <img src="${imageData.guid.rendered}">
+        <img src="${imageData.guid.rendered}" alt="Cover of the titled game" id="myImage">
+        <div id="myModal" class="modal">
+            <span class="close">&times</span>
+            <img class="modalContent" id="modalContent">
+            <div id="caption">${data["title"]["rendered"]}</div>
+        </div>
         `;
     }
 
-    console.log(data);
 }
 
 blogFetcher();

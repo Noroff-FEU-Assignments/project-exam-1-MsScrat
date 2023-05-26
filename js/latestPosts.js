@@ -14,7 +14,7 @@ async function imageFetcher() {
 
             document.getElementById("box" + i).innerHTML =
             `
-            <a href="html/blogSpecific.html?id=${data[i].id}"><img src="${imageData.guid.rendered}"></a>
+            <a href="html/blogSpecific.html?id=${data[i].id}"><img src="${imageData.guid.rendered}" alt="Cover of the titled game"></a>
             `;
         }
     }

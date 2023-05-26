@@ -21,11 +21,12 @@ async function blogFetcher(n) {
             `
             <div class="blogListContainer">
                 <div>
-                    <img src="${imageData.guid.rendered}">
+                    <img src="${imageData.guid.rendered}" alt="Cover of the titled game">
                 </div>
                 <div class="blogListContent">
                     <h3 class="blogListPost">${data[i].title.rendered}</h3>
-                    ${data[i]["excerpt"]["rendered"]}
+                    <p>${data[i]["date"]}</p>
+                    <p>${data[i]["excerpt"]["rendered"]}</p>
                     <a href="blogSpecific.html?id=${data[i].id}">Read more</a>
                 </div>
             </div>
@@ -41,4 +42,3 @@ function showMore(){
 
     blogFetcher(pageLimit);
 }
-
