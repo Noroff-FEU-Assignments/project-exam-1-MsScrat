@@ -5,6 +5,10 @@
         gap: 0px;
     }
 
+    .headerBackground {
+        height: 80vh;
+    }
+
 /* Blog List */
 
     .blogListContainer {
