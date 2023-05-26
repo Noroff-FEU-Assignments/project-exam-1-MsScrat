@@ -5,6 +5,78 @@
         gap: 0px;
     }
 
+/* Blog List */
+
+    .blogListContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blogListContainer img {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .blogListContent {
+        text-align: center;
+        width: 68vw;
+        margin: 0 auto;
+    }
+
+    .blogListContent h3 {
+        margin-top: 0;
+    }
+
+/* About */
+
+    .aboutSection1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutSection1 img {
+        width: 80vw;
+    }
+
+    .aboutContent {
+        width: 78vw;
+        margin: 0 auto;
+    }
+
+    .aboutContent h2 {
+        margin-top: 0;
+    }
+
+
+
+/* Contact */
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #name, #email, #subject, #message {
+        width: 80vw;
+    }
+
+    #submit {
+        width: 20vw;
+    }
+
+    .contactText {
+        width: 80vw;
+        text-align: center;
+        margin: 25px auto;
+    }
+
+/* Footer */
+
     footer {
         display: flex;
         flex-direction: column;
