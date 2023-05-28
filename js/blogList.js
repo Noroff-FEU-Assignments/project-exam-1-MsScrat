@@ -39,6 +39,5 @@ blogFetcher(pageLimit)
 
 function showMore(){
     pageLimit += 5;
-
     blogFetcher(pageLimit);
 }

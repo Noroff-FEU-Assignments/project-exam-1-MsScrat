@@ -27,13 +27,31 @@ async function blogFetcher() {
 
         document.getElementById("blogSpecificImage").innerHTML = 
         `
-        <img src="${imageData.guid.rendered}" alt="Cover of the titled game" id="myImage">
+        <img src="${imageData.guid.rendered}" alt="Cover of the titled game" id="myImg">
         <div id="myModal" class="modal">
-            <span class="close">&times</span>
-            <img class="modalContent" id="modalContent">
-            <div id="caption">${data["title"]["rendered"]}</div>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
         </div>
         `;
+    }
+
+    /* Modal */
+
+    var modal = document.getElementById("myModal");
+
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+        modal.style.display = "none";
     }
 
 }
