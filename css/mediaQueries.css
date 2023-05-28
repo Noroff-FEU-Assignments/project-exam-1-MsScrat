@@ -44,9 +44,8 @@
 
     #blogSpecificImage img {
         position: static;
-        width: 80vw;
+        width: 100vw;
         height: auto;
-        margin-top: 10px;
     }
 
     .blogSpecificContent {
