@@ -27,26 +27,26 @@ async function blogFetcher() {
 
         document.getElementById("blogSpecificImage").innerHTML = 
         `
-        <img src="${imageData.guid.rendered}" alt="Cover of the titled game" id="myImg">
+        <img src="${imageData.guid.rendered}" alt="Cover of the titled game" id="myImage">
         <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
+            <span class="close"></span>
+            <img class="modalContent" id="modalContent">
         </div>
         `;
+
+        document.title = "ShePlaysToo | " + data["title"]["rendered"];
     }
 
     /* Modal */
 
     var modal = document.getElementById("myModal");
 
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
+    var img = document.getElementById("myImage");
+    var modalImg = document.getElementById("modalContent");
 
     img.onclick = function() {
         modal.style.display = "block";
-        modalImg.src = this.src;
-    }
+        modalImg.src = this.src;    }
 
     var span = document.getElementsByClassName("close")[0];
 

@@ -9,6 +9,8 @@
         height: 60vh;
     }
 
+
+
 /* Blog List */
 
     .blogListContainer {
@@ -31,6 +33,28 @@
     .blogListContent h3 {
         margin-top: 0;
     }
+
+
+/* Blog Spicific */
+
+    .blogSpicificContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #blogSpecificImage img {
+        position: static;
+        width: 80vw;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .blogSpecificContent {
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+
 
 /* About */
 
