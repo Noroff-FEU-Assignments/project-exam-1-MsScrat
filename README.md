@@ -1,67 +1,41 @@
-## Project Exam 1
+# She Plays Too - ProjectExam1
+She Plays Too is a website developed as an exam.   
+This is my first year exam studing front-end development at Noroff. 
 
-## Goal
+## Build with
+- HTML
+- CSS
+- JavaScript
 
-To put into practice the skills learned over your first year of studies.
+## Description 
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+### Task and idea
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+We were assigned with making a blog of our liking, which where to include certian criterias (some listed below).  
 
-### Blog Page
+My idea was to make a blog for game reviews made by girls and for girls.   
+Being a girl gamer myself, I would love such a website which was not steriotyped with cozy switch games and a pink theme.  
+I wanted it to be a minimalistic website, simply with games I have played and enjoyed as a girl.
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+### Criterias
 
-### Blog Specific Page
+The website is build and designed by me, with data feched from WordPress using API.  
+The website includes MediaQueries for mobile (except for the slider).
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+#### Other criterias included is:  
+- A slider at the index page. 
+- A validation for the contact form.
+- A "show more" button on the blog page, which loads five more posts.
+- A modal on the blog specific page which enlarges the image. 
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+## Result
+With this being an exam, there are some things added for criteria and others that's missing out because of time.    
+Overall, I am very saticfied with how this turned out. Compared to earlier projects this year, I am happy to say I have made some progress!
 
-### Contact page
+## Social
+If you would like to follow me:   
+[LinkedIn Page](https://www.linkedin.com/in/miriam-dahlberg-99b2a1247/)
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
-
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
-
-### WordPress
-
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
-
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
-
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
-
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
-
-## Level 1 Process
-
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
-
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
-
+## Acknowledgments
+Besides all the teachers and students at Noroff, I would like to thank my fiance, [Emil](https://github.com/emilgab).  
+He was my inspiration for joining this study and has been my number one supporter and ruberduck for this exam.
